@@ -1,0 +1,14 @@
+- name: Ensure magic group is there
+  group:
+    name: magic
+    state: present
+
+- name: Ensure mutant group is there
+  group:
+    name: mutant
+    state: present
+
+- name: Ensure centurion group is there
+  group:
+    name: centurion
+    state: present

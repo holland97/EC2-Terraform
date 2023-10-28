@@ -1,0 +1,9 @@
+---
+- name: Provision Ubuntu Server
+  hosts: ubuntu-server
+  become: yes
+  become_user: root
+  tasks:
+    # - import_tasks: ./groups.yml
+    - import_tasks: ./users.yml
+    - import_tasks: packages.yml

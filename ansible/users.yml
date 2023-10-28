@@ -1,0 +1,20 @@
+- name: Create Dr. Doom
+  user:
+    name: dr.doom
+    uid: 9999
+    shell: /bin/bash
+    group: magic
+
+- name: Create Magneto
+  user:
+    name: magneto
+    uid: 9900
+    shell: /bin/bash
+    group: mutant
+
+- name: Create Nova
+  user:
+    name: nova
+    uid: 9000
+    shell: /bin/bash
+    group: centurion

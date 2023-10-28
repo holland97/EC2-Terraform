@@ -1,0 +1,9 @@
+- name: Install packages and update packages
+  apt: name={{item}} state=present update_cache=yes
+  with_items:
+    - tree
+    - net-tools
+    - passwd
+    - pwgen
+    - whois
+    - libpam-pwquality
